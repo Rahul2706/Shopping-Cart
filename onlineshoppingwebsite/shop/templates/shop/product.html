@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product List</title>
+</head>
+<body>
+
+
+ {% for prd in product %}
+
+
+ <p>Product Id -->{{prd.product_id}}</p>
+ <p>Product Name -->By <b>{{prd.product_name}} on {{prd.pub_date}}</b></p>
+ <p>Product Category --><b>{{prd.category}}</p></b>
+ <p>Product Subcategory -->{{prd.subcategory}}</p>
+ <p>Product Price -->Price --> <b>{{prd.price}}</b></p>
+ <p>Product Description --><b>{{prd.desc}}</b></p>
+ <p>Product Image --><b>{{prd.img}}</b></p>
+
+
+    {% endfor %}
+
+
+</body>
+</html>
